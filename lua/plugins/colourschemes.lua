@@ -63,4 +63,25 @@ return {
       -- transparent_background = true,
     },
   },
+  {
+    "olivercederborg/poimandres.nvim",
+    priority = 1000,
+    config = function()
+      require("poimandres").setup({
+        -- leave this setup function empty for default config
+        -- or refer to the configuration section
+        -- for configuration options
+      })
+    end,
+    opts = {
+      transparent_background = true,
+    },
+  },
+  {
+    "lunarvim/darkplus.nvim",
+    -- lazy = false,
+    opts = {
+      darkplus_style = "dark",
+    },
+  },
 }

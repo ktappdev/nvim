@@ -5,7 +5,7 @@ return {
     cmd = "ASToggle", -- optional for lazy loading on command
     event = { "InsertLeave", "TextChanged" }, -- optional for lazy loading on trigger events
     opts = {
-      enabled = true, -- start auto-save when the plugin is loaded (i.e. when your package manager loads it)
+      enabled = false, -- start auto-save when the plugin is loaded (i.e. when your package manager loads it)
       trigger_events = { -- See :h events
         immediate_save = { "BufLeave", "FocusLost" }, -- vim events that trigger an immediate save
         defer_save = { "InsertLeave", "TextChanged" }, -- vim events that trigger a deferred save (saves after `debounce_delay`)
